@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Tela Inicial</title>
+    <style>
+        /* Estilo geral da página */
+        body {
+            display: flex; /* Usando flexbox para centralizar os itens */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* A altura da tela é 100% da altura da janela do navegador */
+            background-color: #282c34; /* Cor de fundo escura */
+            color: white; /* Cor do texto */
+            font-family: Arial, sans-serif; /* Fonte usada no texto */
+            flex-direction: column; /* Alinha os itens na vertical */
+            text-align: center; /* Centraliza o texto */
+        }
+        /* Botões */
+        .button {
+            background-color: #61dafb; /* Cor de fundo do botão */
+            border: none; /* Remove a borda padrão */
+            padding: 15px 30px; /* Preenche o botão com espaço interno */
+            margin: 10px; /* Adiciona espaçamento entre os botões */
+            font-size: 18px; /* Tamanho da fonte do texto */
+            cursor: pointer; /* Modifica o cursor para indicar que o botão é clicável */
+            border-radius: 5px; /* Bordas arredondadas no botão */
+        }
+        /* Efeito de hover para os botões, quando o usuário passa o mouse sobre eles */
+        .button:hover {
+            background-color: #4fa3d1; /* Cor de fundo mais escura */
+        }
+        /* Estilo do texto explicativo */
+        .tutorial {
+            margin-top: 20px; /* Espaço superior do texto */
+            font-size: 16px; /* Tamanho da fonte do texto */
+            max-width: 300px; /* Limita a largura do texto */
+        }
+    </style>
+</head>
+<body>
+    <!-- Título da página -->
+    <h1>Continue ósseo!</h1>
+    <!-- Texto explicativo abaixo do título -->
+    <p class="tutorial">Use as setas para se mover. Evite a carne, ela te destrói!</p>
+    
+    <!-- Botões para iniciar o jogo e sair -->
+    <button class="button" onclick="startGame()">Jogar</button>
+    <button class="button" onclick="exitGame()">Sair</button>
+
+    <script>
+        // Função chamada quando o botão "Jogar" é clicado
+        function startGame() {
+            window.location.href = 'index.html';  // Redireciona o usuário para a página 'index.html' para iniciar o jogo
+        }
+
+        // Função chamada quando o botão "Sair" é clicado
+        function exitGame() {
+            window.close(); // Fecha a janela do navegador
+        }
+    </script>
+</body>
+</html>
+
+
